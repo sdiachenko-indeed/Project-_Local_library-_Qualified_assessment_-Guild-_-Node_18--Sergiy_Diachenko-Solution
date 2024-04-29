@@ -10,9 +10,7 @@ function sortAccountsByLastName(accounts) {
   return accounts.sort((a, b) => {
     const lastNameA = a.name.last.toLowerCase();
     const lastNameB = b.name.last.toLowerCase();
-    if (lastNameA < lastNameB) return -1;
-    if (lastNameA > lastNameB) return 1;
-    return 0;
+    return lastNameA < lastNameB?  -1: 1;
   });
 }
 
